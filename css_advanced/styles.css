@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Fonts */
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    color: #000000
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1440px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    width: 1112px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 53px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+/* -------------------Hero Section------------------------ */
+
+
+
+.space-hero {
+    height: 200px;
+}
+
+.hero {
+    width: 100%;
+    height: 1093px;
+    background-image: url("images/Object.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-container {
+    margin: auto;
+    height: auto;
+    width: 1112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    margin-top: -20px;
+}
+
+.slogan span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 38px;
+}
+
+.hero-container button {
+    background-color: #C271FF;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 22px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.avatar-pros {
+    margin-top: 168px;
+}
+
+.avatar-pros h2 {
+    font-size: 32px;
+    font-family: "Source Sans 3", sans-serif;
+    margin-bottom: 87px;
+}
+
+.avatar {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 136px;
+    width: 1112px;
+}
+
+.avatar div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+}
+
+.avatar p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* -------------------Quotes Section------------------------ */
+
+.quotes-section {
+    color: #FFFFFF;
+    height: 392px;
+    background-color: #C271FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+}
+
+blockquote {
+    font-size: 22px;
+    width: 70ch;
+}
+
+.quote {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.quote h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.quote p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+}
+
+
+
+/* -------------------Videos Section------------------------ */
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 87px 0px 87px 0px;
+    background-color: #FFFFFF;
+}
+
+.videos h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 32px;
+    margin-bottom: 75px;
+}
+
+.video-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1112px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+}
+
+.thumbnail-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.thumbnail-wrap img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.video-container #play-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.video-container h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+}
+
+.video-container p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #686D76;
+}
+
+#round-image {
+    border-radius: 50%;
+    width: 35px;
+    height: auto;
+
+}
+
+.profile-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 14px;
+    
+}
+
+.profile-wrap h4 {
+    color: #C271FF;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.stars-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.stars-wrap p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #C271FF;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.stars div {
+    color: #C271FF;
+}
+
+.stars #gray-star {
+    color: #D8D8D8;
+}
+
+
+
+/* -------------------Membership Section------------------------ */
+
+.member-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #071629;
+    color: #FFFFFF;
+    padding-top: 87px;
+    padding-bottom: 87px;
+    gap: 58px;
+}
+
+.member-section span {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 32px;
+    color: #C271FF;
+}
+
+.member-section h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 32px;
+}
+
+.member-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1112px;
+    gap: 27px;
+    text-align: center;
+}
+
+.member-wrap div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.member-wrap img {
+    width: 43px;
+}
+
+.member-wrap div h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+}
+
+.member-wrap div p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    width: 25ch;
+}
+
+.member-section button {
+    background-color: #C271FF;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 22px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+/* -------------------FAQ Section------------------------ */
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 74px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+    background-color: #FFFFFF;
+}
+
+.faq-section h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 60px;
+}
+
+.faq-component {
+    width: 920px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-content: space-between;
+    column-gap: 220px;
+    row-gap: 74px;
+}
+
+.faq-component div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq-component h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+}
+
+.faq-component p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #686D76;
+}
+
+
+/* -------------------Footer Section------------------------ */
+
+
+.footer {
+    background-color: #071629;
+    height: 219px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.footer-container {
+    width: 1103px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container #social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    color: #FFFFFF;
+    font-size:30px;
+
+}
+
+section #rights {
+    display: block;
+    text-align: center;
+    background-color: #071629;
+    color: #FFF;
+}
