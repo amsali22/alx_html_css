@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: #071629;
+}
+
+.button1 {
+    background-color: #FF6565;
+    padding: 13px 31px;
+    border: none;
+    border-radius: 22px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.button1:hover {
+    opacity: 0.9;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.nav img {
+    max-width: 161px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+header li a:hover {
+    color: #FF6565;
+}
+
+header .menu {
+    display: none;
+    transition: display .2s ease-in-out;
+}
+
+.menubutton {
+    display: none;
+}
+
+.iconmenu {
+    padding-top: 20px;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+header .iconmenu .iconnav {
+    background: #FFFFFF;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-in;
+}
+
+header .iconmenu .iconnav:before,
+header .iconmenu .iconnav:after {
+    background: #FFFFFF;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 120%;
+    position: absolute;
+    transition: all .2s ease-in;
+}
+
+header .iconmenu .iconnav:before {
+    top: 9px;
+}
+
+header .iconmenu .iconnav:after {
+    top: -9px;
+}
+
+header .menubutton:checked ~ div .menu {
+    display: block;
+}
+
+header .menubutton:checked ~ .iconmenu .iconnav {
+    background: transparent;
+}
+
+header .menubutton:checked ~ .iconmenu .iconnav:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+header .menubutton:checked ~ .iconmenu .iconnav:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* -------------------Hero Section------------------------ */
+
+.hero {
+    width: 100%;
+    height: auto;
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.herocomp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 327px;
+    padding-bottom: 65px;
+}
+
+.herocomp h1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 32px;
+    max-width: 20ch;
+    line-height: 1.3;
+}
+
+.herocomp p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    max-width: 30ch;
+}
+
+.herocomp .btn {
+    margin-top: 10px;
+}
+
+.hero .htext {
+    padding-bottom: 106px;
+}
+
+
+.service {
+	color: #071629;
+	background-color: #FFFFFF;
+}
+
+.largecontainer {
+	margin: auto;
+	max-width: 1000px;
+	padding-left: 13px;
+	padding-right: 13px;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.servicecomp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	gap: 96px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.info h2 {
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 32px;
+}
+
+.card {
+	display: grid;
+	gap: 96px;
+}
+
+.cardsmall {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.cardsmall h3 {
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 18px;
+}
+
+.cardsmall p {
+	max-width: 25ch;
+}
+
+.cardsmall span {
+	color: var(--primary);
+	font-size: 60px;
+}
+
+
+.result {
+    background-image: url('./images/headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #FFFFFF;
+  }
+  
+  .resultcomp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      gap: 96px;
+  }
+  
+  .resultcomp .servicecomp {
+      display: grid;
+      gap: 60px;
+  }
+  
+  .pentagon {
+    position: relative;
+    width: 190px;
+    height: 190px;
+  }
+  
+  .pentext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .pentext h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 46px;
+  }
+  
+  .pentext p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+  }
+  
+  .contact {
+    background-color: #FFFFFF;
+    color: #071629;
+  }
+  
+  .contactus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+  }
+  
+  .contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  }
+  
+  .contact-form div {
+    width: 100%;
+  }
+  
+  form label {
+    display: none;
+  }
+  
+  input, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #5a5858;
+    padding: 10px 2px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    color: #071629;
+  }
+  
+  #buttonpos {
+      text-align: center;
+  }
+  .smallcont {
+	margin: auto;
+	max-width: 335px;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+footer {
+    background-color: #071629;
+    color: #FFF;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  footer .largecontainer  {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .footersec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+  }
+  
+  .logofooter img {
+    width: 161px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+  
+  .social .fa-brands {
+    font-size: 29px;
+  }
+  
+  footer p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-top: 45px;
+    opacity: 0.3517;
+    text-align: center;
+  }
+/* -------------------Responsiv------------------------ */
+
+/* Tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    header li a {
+        display: block;
+        padding: 0px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    .iconmenu {
+        display: none;
+    }
+
+    header .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        column-gap: 20px;
+    }
+
+    .herocomp h1 {
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 32px;
+        max-width: 60ch;
+        line-height: 1.3;
+    }
+
+    .herocomp p {
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 16px;
+        max-width: 60ch;
+    }
+
+    .hero .htext {
+        max-width: 637px;
+        margin: auto;
+    }
+
+    
+    .card {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: end;
+        gap: 96px;
+    }
+
+    .footersec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 45px;
+      }
+      
+      footer .llargecontainer  {
+        padding-top: 109px;
+        padding-bottom: 109px;
+      }
+}
+
+/* Desktop */
+@media (min-width: 768px) and (max-width: 2560px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header li a {
+        display: block;
+        padding: 0px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    .iconmenu {
+        display: none;
+    }
+
+    header .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        column-gap: 20px;
+    }
+
+    .herocomp h1 {
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 32px;
+        max-width: 60ch;
+        line-height: 1.3;
+    }
+
+    .herocomp p {
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 16px;
+        max-width: 60ch;
+    }
+
+    .hero .htext {
+        max-width: 637px;
+        margin: auto;
+    }
+
+
+    .card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: end;
+    gap: 58px;
+    }
+    
+    .info p {
+    max-width: 80ch;
+    }
+
+    .footersec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 45px;
+      }
+      
+      footer .largecontainer  {
+        padding-top: 109px;
+        padding-bottom: 109px;
+      }
+}
+
+
+
